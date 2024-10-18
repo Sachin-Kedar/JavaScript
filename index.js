@@ -2,9 +2,9 @@
 //     console.log("Hey Buddy");
 // }
 
-//  Now will create a 7th table 
+//  Now will create a 17th table 
 let i=1
 while(i<=10){
-    console.log("7 *",i ,"= ", 7*i);
+    console.log("17 *",i ,"= ", 17*i);
     i++;
 }
