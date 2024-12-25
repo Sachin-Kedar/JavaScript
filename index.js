@@ -3,8 +3,14 @@
 // }
 
 //  Now will create a 17th table 
-let i=1
-while(i<=10){
-    console.log("17 *",i ,"= ", 17*i);
-    i++;
+// let i=1
+// while(i<=10){
+//     console.log("17 *",i ,"= ", 17*i);
+//     i++;
+// }
+
+
+var obj1 = human();
+class human{
+
 }
