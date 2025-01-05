@@ -125,7 +125,7 @@ Adding two or more Arrays:
   1. Push
   2. Concat (+)
   3. Spread (...)
-  */
+  
 
 const colors3=["A","B","C","D"];
 
@@ -144,3 +144,8 @@ const colors5= ["x","y","z"]
  const newArr3= [...colors3, ...colors4];
  console.log("Using Spread : ");
  console.log(newArr3);
+
+ */
+
+
+console.log(colors2.isArray);PNIRAC
