@@ -148,4 +148,4 @@ const colors5= ["x","y","z"]
  */
 
 
-console.log(colors2.isArray);PNIRAC
+console.log(colors2.isArray);
