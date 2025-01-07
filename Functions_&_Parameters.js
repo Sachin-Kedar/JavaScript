@@ -75,3 +75,20 @@ const addTwo1 =(num1 , num2) => num1+num2
 // const addTwo1 =(num1 , num2) => (num1+num2)
 // This is also the same as above function
 console.log( addTwo1(5,8)); // 13
+
+
+
+/*
+ Immediate Invoked Function Expression:
+
+(function chai(){
+    console.log(`DB CONNECTED`);
+    
+})(); // This function is called Named IIFE.
+// To write two IIFE at one time add ;(Semicolon) after first completed.
+
+((name) =>{
+    console.log(`DB tWO CONNECTED ${name}`)
+})("Hitesh")
+
+*/
