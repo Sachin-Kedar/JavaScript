@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Change Background Color</title>
+    <style>
+        *{
+            margin: 20px;
+            padding: 10px;
+        }
+        h1{
+            border:2px solid black;
+        }
+        button{
+            margin: 0px 90px;
+        }
+        h2{
+            
+            margin: 10px 50px;
+        }
+    </style>
+  </head>
+  <body id="body">
+    <h1>Change Background color every second Automatically</h1>
+    <h2>Click start button to automate color change effect</h2>
+    <button id="start">Start</button>
+    <h2>Click stop button to stop this effect</h2>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // genererate a random color using random number between 0-256
+
+    let intervalID;
+
+    let sayDate = function () {
+      let a = Math.round(Math.random() * 256, 0);
+      let b = Math.round(Math.random() * 256, 0);
+      let c = Math.round(Math.random() * 256, 0);
+      document.getElementById(
+        "body"
+      ).style.backgroundColor = `rgb(${a},${b},${c})`;
+    };
+    document.getElementById("start").addEventListener("click", function () {
+      if (!intervalID) {
+        intervalID = setInterval(sayDate, 1000);
+      }
+    });
+
+    document.getElementById("stop").addEventListener("click", function () {
+      if (intervalID) {
+        clearInterval(intervalID);
+        document.body.style.backgroundColor= "white";
+        intervalID = null;
+      }
+    });
+  </script>
+</html>
